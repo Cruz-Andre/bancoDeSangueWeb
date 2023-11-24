@@ -23,9 +23,9 @@ O objetivo é facilitar o CRUD de doadores, o estoque de bolsas de sangue por ti
 - SQL
 - PHP
 
-<h3> Este projeto está em desenvolvimento para o Projeto Integrador II </h3>
+<h3> Este projeto está em desenvolvimento relacionado ao PI II </h3>
 <h3> Módulo D - Assistente de Desenvolvimento de Aplicativos Computacionais II - SenacTech. </h3>
-<h3> Previsão de conclusão: Maio de 2024 </h3>
+<h3> Previsão de conclusão e entrega: Maio de 2024 </h3>
 <h3> Autor: André Cruz</h3>
 
 ![](https://progress-bar.dev/5/?title=Overal%20Progress)
