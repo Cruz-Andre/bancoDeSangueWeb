@@ -6,9 +6,10 @@ O objetivo é facilitar o CRUD de doadores, o estoque de bolsas de sangue por ti
 
 <h3>A aplicação web possui as seguintes funcionalidades:</h3>
 
+- Página inicial com as informações dos estoques de bolsas de sangue por tipo sanguíneo em cada hospital ![](https://progress-bar.dev/30/)
+- Consulta do estoque de bolsas de sangue por tipo sanguíneo nos hospitais ![](https://progress-bar.dev/1/)
 - Cadastro de usuários/doadores ![](https://progress-bar.dev/0/)
 - Login de usuários/doadores ![](https://progress-bar.dev/1/)
-- Consulta do estoque de bolsas de sangue por tipo sanguíneo nos hospitais ![](https://progress-bar.dev/1/)
 - Cadastro de hospitais e quantidade de bolsas de sangue por tipo sanguíneo ![](https://progress-bar.dev/0/)
 - Manutenção de usuários e hospitais ![](https://progress-bar.dev/0/)
 - ~~Agendamento de doação de sangue~~
