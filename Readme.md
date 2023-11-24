@@ -30,7 +30,7 @@
 - SQL
 - PHP
 
-# TODO
+# TO-DO
 - Novo logotipo;
 - Novo design;
 - As funcionalidades descritas acima.
