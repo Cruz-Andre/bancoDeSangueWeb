@@ -60,3 +60,8 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+.rodape__texto {
+    font-family: Verdana, sans-serif;
+    margin: 1rem 0;
+}
