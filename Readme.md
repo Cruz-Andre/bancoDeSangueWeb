@@ -32,6 +32,6 @@ O objetivo é facilitar o CRUD de doadores, o estoque de bolsas de sangue por ti
 <br>
 
 # TODO
-- Logotipo;
+- Novo logotipo;
 - Novo design;
 - As funcionalidades descritas acima.
