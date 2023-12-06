@@ -31,6 +31,6 @@
 - PHP
 
 # TO-DO
-- Novo logotipo;
+- Novo logotipo; :white_check_mark:
 - Novo design;
 - As funcionalidades descritas acima.
