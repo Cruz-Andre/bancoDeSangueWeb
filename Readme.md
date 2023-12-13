@@ -6,7 +6,7 @@
 <h3>Previsão de conclusão e entrega: Maio de 2024</h3>
 <h3>Autor: André Cruz</h3>
 
-![](https://progress-bar.dev/5/?title=Overal%20Progress)
+![](https://progress-bar.dev/14/?title=Overal%20Progress)
 <br>
 
 <br>
@@ -15,22 +15,24 @@
 
 - Página inicial com as informações dos estoques de bolsas de sangue por tipo sanguíneo em cada hospital ![](https://progress-bar.dev/30/)
 - Consulta do estoque de bolsas de sangue por tipo sanguíneo nos hospitais ![](https://progress-bar.dev/1/)
-- Cadastro de usuários/doadores ![](https://progress-bar.dev/0/)
-- Login de usuários/doadores ![](https://progress-bar.dev/1/)
-- Cadastro de hospitais e quantidade de bolsas de sangue por tipo sanguíneo ![](https://progress-bar.dev/0/)
-- Manutenção de usuários e hospitais ![](https://progress-bar.dev/0/)
+- Página de cadastro de usuários/doadores ![](https://progress-bar.dev/0/)
+- Página de login de usuários ![](https://progress-bar.dev/50/)
+- Página de cadastro de hospitais e quantidade de bolsas de sangue por tipo sanguíneo ![](https://progress-bar.dev/0/)
+- Manutenção de usuários/doadores e hospitais ![](https://progress-bar.dev/0/)
 - ~~Agendamento de doação de sangue~~
 
 <h3>O projeto está em desenvolvimento utilizando as seguintes tecnologias:</h3>
 
 - HTML & CSS
-- JavaScript
+- JavaScript (or TypeScript)
+- REACT? I hope not!
 - ~~Java~~
 - ~~BootStrap 5~~
+- TailWindCSS
 - SQL
 - PHP
 
 # TO-DO
-- Novo logotipo; :white_check_mark:
+- ~~Novo logotipo;~~ :white_check_mark:
 - Novo design;
 - As funcionalidades descritas acima.
