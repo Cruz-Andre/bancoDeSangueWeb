@@ -1,80 +1,80 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
 .navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 img {
-    width: 10%;
+  width: 10%;
 }
 
 .menu {
-    display: flex;
+  display: flex;
 }
 
 .login {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 nav li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 main {
-    padding: 20px;
-    
-    /* coloca o main para preencher todo o espaço disponível 
+  padding: 20px;
+
+  /* coloca o main para preencher todo o espaço disponível 
      * colocando o rodapé ancorado no final da página
      * Necessário que a tag pai (no caso body) esteja com o display flex
      */
-    flex: 1;
+  flex: 1;
 }
 
 h1 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .hospital {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .rodape__texto {
-    font-family: Verdana, sans-serif;
-    margin: 1rem 0;
+  font-family: Verdana, sans-serif;
+  margin: 1rem 0;
 }
