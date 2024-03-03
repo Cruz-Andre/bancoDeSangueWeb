@@ -10,15 +10,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/jpg" href="img/logoBancoDeSangueNew.png">
+  <link rel="stylesheet" href="../styles/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Banco de Sangue</title>
+  <title>Login</title>
 </head>
 
 <body>
-  <div class="min-h-screen bg-gray-100 flex items-center justify-center">
+  <header>
+    <nav class="navbar">
+      <img src="../img/logoBancoDeSangueNew.png" alt="logo Doação">
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+      <ul class="login">
+        <li><a href="cadastro.html">Cadastrar</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="bg-gray-100 flex items-center justify-center">
     <div class="bg-white p-8 rounded-lg shadow-lg w-[400px]" id="miq9gmx5qk8">
       <div class="flex justify-center mb-4">
-        <img src="img/logoBancoDeSangueNew.png" width="100" height="100" alt="Logo" class="object-contain object-center"
+        <img src="../img/logoBancoDeSangueNew.png" width="100" height="100" alt="Logo" class="object-contain object-center"
           style="aspect-ratio: 100 / 100; object-fit: cover;" />
       </div>
       <h2 class="text-2xl font-bold text-center mb-8">Faça seu Login</h2>
@@ -41,7 +54,14 @@
         </button>
       </form>
     </div>
-  </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p class="rodape__texto">&copy; André Cruz - <span id="ano"></span> - Doação de Sangue</p>
+  </footer>
+
+  <script type="module" src="../js/ano.js"></script>
 </body>
 
 </html>
