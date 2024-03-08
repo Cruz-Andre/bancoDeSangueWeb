@@ -90,10 +90,13 @@
           <div class="formCampoDivCEP">
             <label for="postal-code">CEP</label>
               <input
-                type="text" 
+                type="tel" 
                 name="postal-code" 
                 id="postal-code" 
                 autocomplete="postal-code"
+                maxlength="8"
+                title="O cep deve ter 8 dígitos sem traço" 
+                pattern="[0-9]{8}"
               >
           </div>
 
