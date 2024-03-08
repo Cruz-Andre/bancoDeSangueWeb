@@ -2,124 +2,136 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="img/logoBancoDeSangueNew.png">
-    <link rel="stylesheet" type="text/css" href="../styles/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Cadastrar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" href="img/logoBancoDeSangueNew.png">
+  <link rel="stylesheet" type="text/css" href="../styles/header.css">
+  <link rel="stylesheet" type="text/css" href="../styles/cadastro.css">
+  <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+  <title>Cadastrar</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-          <img src="../img/logoBancoDeSangueNew.png" alt="logo Doação">
-          <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-          </ul>
-          <ul class="login">
-            <li><a href="login.html">Logar</a></li>
-          </ul>
-        </nav>
-    </header>
-    
-    <main class="flex justify-center">
-        <form class="bg-gray-100 p-5 border rounded-2xl">
-            <div class="space-y-12 ">
-                <div class="border-b border-gray-900/10 pb-12">
-                    <h2 class="text-base text-center font-semibold leading-7 text-gray-900">Cadastro de Doadores</h2>
-                    <p class="mt-1 text-sm text-center leading-6 text-gray-600">This information will be displayed publicly so be careful what you share.</p>
-                </div>
-            </div>
+  <header>
+    <nav class="navbar">
+      <img src="../img/logoBancoDeSangueNew.png" alt="logo Doação">
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+      <ul class="login">
+        <li><a href="login.html">Logar</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <div class="border-b border-gray-900/10 pb-12">
-                <!-- <h2 class="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
-                <p class="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p> -->
+  <main>
+    <form class="formCaixa">
+      <div class="formCaixaDiv1">
+        <h2>Cadastro de Doadores</h2>
+      </div>
 
-                <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-5">
-                    <div class="sm:col-span-5">
-                        <label for="nomeCompleto" class="block text-sm font-medium leading-6 text-gray-900">Nome Completo</label>
-                        <div class="mt-2">
-                            <input type="text" name="nomeCompleto" id="nomeCompleto" autocomplete="nomeCompleto"
-                                class="block w-full p-3 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-4 focus:ring-[#9B0602] focus:outline-none sm:leading-6">
-                        </div>
-                    </div>
-                    
-                    <div class="sm:col-span-2">
-                        <label for="tipoSangue" class="block text-sm font-medium leading-6 text-gray-900">Tipo Sanguíneo</label>
-                        <div class="mt-2">
-                            <input id="tipoSangue" name="tipoSangue" type="text" autocomplete="tipoSangue"
-                                class="block w-full p-3 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-4 focus:ring-[#9B0602] focus:outline-none sm:leading-6">
-                        </div>
-                    </div>
+      <div class="formCampos ">
+        <div class="formCamposDiv">
+          <div class="formCampoDivNome">
+            <label for="nomeCompleto">Nome Completo</label>
+              <input
+                type="text" 
+                name="nomeCompleto" 
+                id="nomeCompleto" 
+                autocomplete="nomeCompleto"
+                required
+              >
+          </div>
 
-                    <div class="sm:col-span-5">
-                        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">E-mail</label>
-                        <div class="mt-2">
-                            <input id="email" name="email" type="email" autocomplete="email"
-                                class="block w-full p-3 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-4 focus:ring-[#9B0602] focus:outline-none sm:leading-6">
-                        </div>
-                    </div>
+          <div class="formCampoDivTipo">
+            <label for="tipoSangue">Tipo Sanguíneo</label>
+              <input
+                id="tipoSangue" 
+                name="tipoSangue" 
+                type="text" 
+                autocomplete="tipoSangue"
+                required
+              >
+          </div>
 
-                    <div class="col-span-3">
-                        <label for="bairro" class="block text-sm font-medium leading-6 text-gray-900">Bairro</label>
-                        <div class="mt-2">
-                            <input type="text" name="bairro" id="bairro" autocomplete="bairro"
-                                class="block w-full p-3 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-4 focus:ring-[#9B0602] focus:outline-none sm:leading-6">
-                        </div>
-                    </div>
+          <div class="formCampoDivBairro">
+            <label for="bairro">Bairro</label>
+              <input
+                type="text" 
+                name="bairro" 
+                id="bairro" 
+                autocomplete="bairro"
+                required
+              >
+          </div>
 
-                    <div class="sm:col-span-3">
-                        <label for="cidade" class="block text-sm font-medium leading-6 text-gray-900">Cidade</label>
-                        <div class="mt-2">
-                            <input type="text" name="cidade" id="cidade" autocomplete="cidade"
-                                class="block w-full p-3 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-4 focus:ring-[#9B0602] focus:outline-none sm:leading-6">
-                        </div>
-                    </div>
+          <div class="formCampoDivCidade">
+            <label for="cidade">Cidade</label>
+              <input
+                type="text" 
+                name="cidade" 
+                id="cidade" 
+                autocomplete="cidade"
+                required
+              >
+          </div>
 
-                    <div class="sm:col-span-3">
-                        <label for="estado" class="block text-sm font-medium leading-6 text-gray-900">Estado</label>
-                        <div class="mt-2">
-                            <input type="text" name="estado" id="estado" autocomplete="estado"
-                                class="block w-full p-3 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-4 focus:ring-[#9B0602] focus:outline-none sm:leading-6">
-                        </div>
-                    </div>
+          <div class="formCampoDivUF">
+            <label for="estado">Estado</label>
+              <input
+                type="text" 
+                name="estado" 
+                id="estado" 
+                autocomplete="estado"
+                required
+              >
+          </div>
 
-                    <div class="sm:col-span-2">
-                        <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">ZIP / Postal
-                            code</label>
-                        <div class="mt-2">
-                            <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
-                                class="block w-full p-3 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-4 focus:ring-[#9B0602] focus:outline-none sm:leading-6">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+          <div class="formCampoDivCEP">
+            <label for="postal-code">CEP</label>
+              <input
+                type="text" 
+                name="postal-code" 
+                id="postal-code" 
+                autocomplete="postal-code"
+              >
+          </div>
 
-            <div class="mt-6 flex items-center justify-center gap-x-6">
-                <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
-                <button 
-                    type="submit"
-                    class="rounded-md 
-                        bg-[#9B0602] 
-                        px-3 py-2 
-                        text-sm 
-                        font-semibold 
-                        text-white 
-                        shadow-sm 
-                        hover:bg-[#9B0602] 
-                        focus-visible:outline 
-                        focus-visible:outline-2 
-                        focus-visible:outline-offset-2"
-                    >
-                    Save
-                </button>
-            </div>
-        </form>
-    </main>
+          <div class="formCampoDivEmail">
+            <label for="email">E-mail</label>
+              <input
+              id="email" 
+              name="email" 
+              type="email" 
+              autocomplete="email"
+              placeholder="nome@dominio.com" 
+							title="O formato do e-mail deve ser: nome@dominio.com" 
+							pattern="[0-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+              required
+              >
+          </div>
 
-     <!-- Rodapé -->
+          <div class="formCampoDivSenha">
+            <label for="senha">Senha</label>
+              <input
+                id="senha" 
+                name="senha" 
+                type="password" 
+                autocomplete="new-password"
+                required
+              >
+          </div>
+        </div>
+      </div>
+
+      <div class="formBotao">
+        <button type="button">Cancel</button>
+        <button type="submit">Cadastrar</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Rodapé -->
   <footer>
     <p class="rodape__texto">&copy; André Cruz - <span id="ano"></span> - Doação de Sangue</p>
   </footer>
