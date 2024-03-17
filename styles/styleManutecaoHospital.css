@@ -71,6 +71,10 @@ th {
   background-color: #EEE;
 }
 
+#seleciona:hover {
+  background-color: rgb(209 213 219);
+}
+
 #mensagensErro {
   color: red;
 }
