@@ -72,7 +72,13 @@ th {
 }
 
 #seleciona:hover {
-  background-color: rgb(209 213 219);
+  background-color: rgba(155, 7, 2, 0.219);
+  color: #555;
+}
+
+.selecionado {
+  background-color: rgb(155 6 2);
+  color: white;
 }
 
 #mensagensErro {
