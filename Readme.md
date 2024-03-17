@@ -6,19 +6,19 @@
 <h3>Previsão de conclusão e entrega: Maio de 2024</h3>
 <h3>Autor: André Cruz</h3>
 
-![](https://progress-bar.dev/18/?title=Overal%20Progress)
+![](https://progress-bar.dev/33/?title=Overal%20Progress)
 <br>
 
 <br>
 
 <h3>A aplicação web possui(rá) as seguintes funcionalidades:</h3>
 
-- Página inicial com as informações dos estoques de bolsas de sangue por tipo sanguíneo em cada hospital ![](https://progress-bar.dev/30/)
-- Página de cadastro de usuários/doadores ![](https://progress-bar.dev/40/)
-- Página de login de usuários ![](https://progress-bar.dev/40/)
-- Página de cadastro de hospitais e quantidade de bolsas de sangue por tipo sanguíneo ![](https://progress-bar.dev/0/)
+- Página inicial com as informações dos estoques de bolsas de sangue por tipo sanguíneo em cada hospital ![](https://progress-bar.dev/50/)
+- Página de cadastro de usuários/doadores ![](https://progress-bar.dev/50/)
+- Página de login de usuários ![](https://progress-bar.dev/50/)
+- Página de Manutenção de hospitais ![](https://progress-bar.dev/50/)
 - Página de Manutenção de usuários/doadores ![](https://progress-bar.dev/0/)
-- Página de Manutenção de hospitais ![](https://progress-bar.dev/0/)
+- Back-End CRUD ![](https://progress-bar.dev/0/)
 - ~~Agendamento de doação de sangue~~
 
 <h3>O projeto está em desenvolvimento utilizando as seguintes tecnologias:</h3>
@@ -34,5 +34,5 @@
 
 # TO-DO
 - ~~Novo logotipo;~~ :white_check_mark:
-- Novo design e substituir o bootstrap/tailwind por CSS vanila
+- ~~Novo design e substituir o bootstrap/tailwind por CSS vanila~~ :white_check_mark:
 - As funcionalidades descritas acima.

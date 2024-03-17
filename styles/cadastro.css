@@ -119,11 +119,11 @@ main {
     grid-column: span 5 / span 5;
 }
 
-.formCampoDivTipo, .formCampoDivCEP {
+.formCampoDivTipo, .formCampoDivCEP, .formCampoDivUF {
     grid-column: span 2 / span 2;
 }
 
-.formCampoDivBairro, .formCampoDivCidade, .formCampoDivUF, .formCampoDivSenha {
+.formCampoDivBairro, .formCampoDivCidade, .formCampoDivDataNasc, .formCampoDivSenha {
     grid-column: span 3 / span 3;
 }
 

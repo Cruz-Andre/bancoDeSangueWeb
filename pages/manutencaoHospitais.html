@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/jpg" href="img/logoBancoDeSangueNew.png">
-  <link rel="stylesheet" type="text/css" href="./styles/header.css">
-  <link rel="stylesheet" type="text/css" href="./styles/styleIndex.css">
-  <link rel="stylesheet" type="text/css" href="./styles/footer.css">
+  <link rel="stylesheet" type="text/css" href="../styles/header.css">
+  <link rel="stylesheet" type="text/css" href="../styles/styleManutecaoHospital.css">
+  <link rel="stylesheet" type="text/css" href="../styles/footer.css">
   <title>Banco de Sangue</title>
 </head>
 
@@ -15,14 +15,14 @@
 
   <header>
     <nav class="navbar">
-      <img src="img/logoBancoDeSangueNew.png" alt="logo Doação">
+      <img src="../img/logoBancoDeSangueNew.png" alt="logo Doação">
       <ul class="menu">
-        <li><a href="#">Home</a></li>
+        <li><a href="#">Manutenção Hospital</a></li>
         <!-- <li><a href="#doacao">Locais de Doação</a></li> -->
       </ul>
       <ul class="login">
-        <li><a href="pages/login.html">Logar</a></li>
-        <li><a href="pages/cadastro.html">Cadastrar</a></li>
+        <li><a href="#">Sair</a></li>
+        <!-- <li><a href="pages/cadastro.html">Cadastrar</a></li> -->
       </ul>
     </nav>
   </header>
@@ -35,6 +35,7 @@
       <table>
         <thead>
           <tr>
+            <th rowspan="2">#</th>
             <th rowspan="2">Hospital</th>
             <th colspan="8">Tipo Sanguíneo</th>
           </tr>
@@ -51,6 +52,7 @@
         </thead>
         <tbody id="tabelaHospitais">
           <tr class="hospital" id="primeiroHospital">
+            <td class="infoCodigo">1</td>
             <td class="infoNome">Santa Casa</td>
             <td class="infoApos">1234</td>
             <td class="infoAneg">5678</td>
@@ -63,6 +65,7 @@
           </tr>
 
           <tr class="hospital">
+            <td class="infoCodigo">2</td>
             <td class="infoNome">Mãe de Deus</td>
             <td class="infoApos">1234</td>
             <td class="infoAneg">5678</td>
@@ -75,6 +78,7 @@
           </tr>
 
           <tr class="hospital">
+            <td class="infoCodigo">3</td>
             <td class="infoNome">Pronto Socorro</td>
             <td class="infoApos">1234</td>
             <td class="infoAneg">5678</td>
@@ -87,8 +91,61 @@
           </tr>
         </tbody>
       </table>
+      <button id="preencherHosp" class="botao btoPreencher">Preencher Campos</button>
       <!-- Adicione informações para outros hospitais aqui -->
     </section>
+
+    <section class="caixa">
+			<h2 id="tituloForm">Manutenção dos Hospitais</h2>
+			<ul id="mensagensErro">
+				<li></li>
+			</ul>
+			<form id="formAdiciona">
+				<div class="grupo1">
+					<label for="nomeHosp">Nome do Hospital:</label>
+					<input id="nomeHosp" name="nomeHosp" type="text" placeholder="Digite o nome do Hospital" class="campo">
+				</div>
+				<div class="grupo2">
+          <div class="sangueA">
+            <label for="Amais">Sangue A+</label>
+            <input id="Amais" name="Amais" type="number" class="campo campo-medio">
+          
+            <label for="Amenos">Sangue A-</label>
+            <input id="Amenos" name="Amenos" type="number" class="campo campo-medio">
+          </div>
+        
+          <div class="sangueB">
+            <label for="Bmais">Sangue B+</label>
+            <input id="Bmais" name="Bmais" type="number" class="campo campo-medio">
+            
+            <label for="Bmenos">Sangue B-</label>
+            <input id="Bmenos" name="Bmenos" type="number" class="campo campo-medio">
+          </div>
+        
+          <div class="sangueAB">
+            <label for="ABmais">Sangue AB+</label>
+            <input id="ABmais" name="ABmais" type="number" class="campo campo-medio">
+          
+          
+            <label for="ABmenos">Sangue AB-</label>
+            <input id="ABmenos" name="ABmenos" type="number" class="campo campo-medio">
+          </div>
+        
+          <div class="sangueO">
+            <label for="Omais">Sangue O+</label>
+            <input id="Omais" name="Omais" type="number" class="campo campo-medio">
+          
+            <label for="Omenos">Sangue O-</label>
+            <input id="Omenos" name="Omenos" type="number" class="campo campo-medio">
+          </div>
+        </div>
+
+        <div class="botoes">
+          <button id="atualizarHosp">Atualizar</button>
+          <button id="cadastrarHosp">Cadastrar</button>
+        </div>
+			</form>
+		</section>
   </main>
 
   <!-- Rodapé -->

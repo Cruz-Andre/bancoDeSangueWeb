@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding: 0.50rem;
+
+  /* coloca o main para preencher todo o espaço disponível 
+     * colocando o rodapé ancorado no final da página
+     * Necessário que a tag pai (no caso body) esteja com o display flex
+     */
+  flex: 1;
+}
+
+
+.caixa {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+section {
+  margin: 2em 0;
+  overflow: hidden;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #ccc;
+}
+
+label {
+  color: #555;
+  display: block;
+  margin-bottom: .2em;
+}
+
+#filtrarTabela {
+  width: 200px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: .5em;
+  font-size: 0.65rem;
+}
+
+td, th {
+  padding: .7em;
+  margin: 0;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  background-color: #EEE;
+}
+
+@media (min-width: 600px) {
+  table {
+    font-size: 1rem;
+  }
+}
