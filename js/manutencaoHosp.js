@@ -1,4 +1,4 @@
-var linhas = document.querySelectorAll("#tabelaHospitais tr");
+let linhas = document.querySelectorAll("#tabelaHospitais tr");
 
 linhas.forEach(function (linha) {
     linha.addEventListener("click", function () {
@@ -9,21 +9,23 @@ linhas.forEach(function (linha) {
 
         // Adicionar a classe apenas à linha clicada
         linha.classList.add("selecionado");
+        
+        console.log(linha)
     });
 });
 
 
 
 
-var selecionaLinhaNaTabela = document.querySelector("#tabelaHospitais")
+let selecionaLinhaNaTabela = document.querySelector("#tabelaHospitais")
 
 selecionaLinhaNaTabela.addEventListener("click", function (clique) {
-    console.log(clique.target);
-    var alvoDoClique = clique.target;
-    var paiDoAlvo = alvoDoClique.parentNode;
-    console.log(paiDoAlvo);
-    console.log(paiDoAlvo.cells);
-    console.log(paiDoAlvo.cells[0].innerText);
+    console.log(clique.target.parentNode);
+    // let alvoDoClique = clique.target;
+    // let paiDoAlvo = alvoDoClique.parentNode;
+    // console.log(paiDoAlvo);
+    // console.log(paiDoAlvo.cells);
+    // console.log(paiDoAlvo.cells[0].innerText);
 })
 
 
