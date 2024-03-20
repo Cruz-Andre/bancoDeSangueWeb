@@ -6,7 +6,7 @@
 <h3>Previsão de conclusão e entrega: Maio de 2024</h3>
 <h3>Autor: André Cruz</h3>
 
-![](https://progress-bar.dev/33/?title=Overal%20Progress)
+![](https://progress-bar.dev/36/?title=Overal%20Progress)
 <br>
 
 <br>
@@ -14,6 +14,7 @@
 <h3>A aplicação web possui(rá) as seguintes funcionalidades:</h3>
 
 - Página inicial com as informações dos estoques de bolsas de sangue por tipo sanguíneo em cada hospital ![](https://progress-bar.dev/50/)
+- Página inicial de usuário logado com links para as páginas de manutenção ![](https://progress-bar.dev/50/)
 - Página de cadastro de usuários/doadores ![](https://progress-bar.dev/50/)
 - Página de login de usuários ![](https://progress-bar.dev/50/)
 - Página de Manutenção de hospitais ![](https://progress-bar.dev/50/)
