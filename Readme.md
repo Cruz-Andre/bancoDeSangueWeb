@@ -6,7 +6,7 @@
 <h3>Previsão de conclusão e entrega: Maio de 2024</h3>
 <h3>Autor: André Cruz</h3>
 
-![](https://progress-bar.dev/36/?title=Overal%20Progress)
+![](https://progress-bar.dev/38/?title=Overal%20Progress)
 <br>
 
 <br>
@@ -17,7 +17,8 @@
 - Página inicial de usuário logado com links para as páginas de manutenção ![](https://progress-bar.dev/50/)
 - Página de cadastro de usuários/doadores ![](https://progress-bar.dev/50/)
 - Página de login de usuários ![](https://progress-bar.dev/50/)
-- Página de Manutenção de hospitais ![](https://progress-bar.dev/50/)
+- Página de Manutenção Tipo Sanguíneo ![](https://progress-bar.dev/50/)
+- Página de Manutenção de Plasma ![](https://progress-bar.dev/50/)
 - Página de Manutenção de usuários/doadores ![](https://progress-bar.dev/0/)
 - Back-End CRUD ![](https://progress-bar.dev/0/)
 - ~~Agendamento de doação de sangue~~

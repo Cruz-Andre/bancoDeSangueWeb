@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/jpg" href="img/logoBancoDeSangueNew.png">
   <link rel="stylesheet" type="text/css" href="../styles/header.css">
-  <link rel="stylesheet" type="text/css" href="../styles/styleManutecaoHospital.css">
+  <link rel="stylesheet" type="text/css" href="../styles/styleManutecaoTipoSanguineo.css">
   <link rel="stylesheet" type="text/css" href="../styles/footer.css">
   <title>Banco de Sangue</title>
 </head>
@@ -17,7 +17,7 @@
     <nav class="navbar">
       <img src="../img/logoBancoDeSangueNew.png" alt="logo Doação">
       <ul class="menu">
-        <li><a href="#">Manutenção de Hospitais</a></li>
+        <li><a href="#">Manutenção de Tipo Sanguíneo</a></li>
       </ul>
       <ul class="login">
         <li><a href="./logado.html">Voltar</a></li>
@@ -30,6 +30,7 @@
       <h2>Quantidade de Bolsas de Sangue por Tipo Sanguíneo</h2>
       <label for="filtrarTabela">Filtre:</label>
       <input type="text" name="filtro" value="" id="filtrarTabela" placeholder="Digite o nome do hospital">
+      <button id="preencherTabela" class="btoPreencherTabela">Preencher Tabela</button>
       <table>
         <thead>
           <tr>
@@ -89,12 +90,12 @@
           </tr>
         </tbody>
       </table>
-      <button id="preencherHosp" class="botao btoPreencher">Preencher Campos</button>
       <!-- Adicione informações para outros hospitais aqui -->
     </section>
-
+    
     <section class="caixa">
-			<h2 id="tituloForm">Manutenção dos Hospitais</h2>
+      <h2 id="tituloForm">Manutenção dos Tipos Sanguíneos</h2>
+      <button id="preencherHosp" class="btoPreencherCampos" title="selecione um hospital na tabela e depois clique">Preencher Campos</button>
 			<ul id="mensagensErro">
 				<li></li>
 			</ul>
@@ -139,8 +140,8 @@
         </div>
 
         <div class="botoes">
-          <button id="atualizarHosp">Atualizar</button>
-          <button id="cadastrarHosp">Cadastrar</button>
+          <button id="atualizarHosp" title="Atualiza os dados do hospital selecionado">Atualizar</button>
+          <button id="cadastrarHosp" title="Cadastra um novo Hospital com os tipos sanguíneos">Cadastrar</button>
         </div>
 			</form>
 		</section>
@@ -148,7 +149,7 @@
 
   <!-- Rodapé -->
   <footer>
-    <p class="rodape__texto">&copy; André Cruz - <span id="ano"></span> - Doação de Sangue</p>
+    <p class="rodape__texto">&copy; André Cruz - 2023 / <span id="ano"></span> - Banco de Sangue</p>
   </footer>
 
   <script type="module" src="../js/ano.js"></script>

@@ -143,6 +143,10 @@ th {
   outline-offset: 2px;
 }
 
+.btoPreencherTabela {
+  float: right;
+}
+
 .botoes {
   display: flex;
   justify-content: space-evenly;
