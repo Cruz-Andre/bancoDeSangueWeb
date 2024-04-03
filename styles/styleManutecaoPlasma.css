@@ -151,6 +151,7 @@ th {
 
 .btoPreencherTabela {
   float: right;
+  margin-bottom: 10px;
 }
 
 .botoes {
@@ -172,9 +173,7 @@ button{
 	border-color: rgb(220 38 38);
   display: block;
   clear: both;
-  margin: 10px 0px;
   border-radius: 0.375rem;
-
 }
 
 button:active{

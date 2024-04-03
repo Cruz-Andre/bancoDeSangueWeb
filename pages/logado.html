@@ -26,8 +26,17 @@
   </header>
 
   <main>
+
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img">
+    </div>
+
     <section class="caixa">
-      <h2>Quantidade de Bolsas de Sangue por Tipo Sanguíneo</h2>
+      <div class="tituloModal">
+        <h2>Quantidade de Bolsas de Sangue por Tipo Sanguíneo</h2>
+        <button onclick="openModal('../img/tabelaDoacao.png')">Quem pode doar para quem</button>
+      </div>
       <label for="filtrarTabela">Filtre:</label>
       <input type="text" name="filtro" value="" id="filtrarTabela" placeholder="Digite o nome do hospital">
       <table>
@@ -96,6 +105,7 @@
 
   <script type="module" src="../js/ano.js"></script>
   <script type="module" src="../js/filtraHospital.js"></script>
+  <script src="../js/modal.js"></script>
 
 </body>
 
