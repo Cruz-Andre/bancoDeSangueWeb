@@ -3,7 +3,7 @@
 <h3>Este projeto é uma Aplicação WEB do bancoDeSangue feito em JAVA e está em desenvolvimento para o PI-II</h3>
 <h3>Módulo D - Assistente de Desenvolvimento de Aplicativos Computacionais II - PI II - SenacTech.</h3>
 <h3>O objetivo é facilitar o CRUD da aplicaçãoWeb para os funcionários cadastradores, o estoque de bolsas de sangue por tipo sanguíneo, bem como fornecer informações sobre o estoque de sangue nos hospitais na página principal.</h3>
-<h3>Previsão de conclusão e entrega: Maio de 2024</h3>
+<h3>Previsão de conclusão e entrega: Julho de 2024</h3>
 <h3>Autor: André Cruz</h3>
 
 ![](https://progress-bar.dev/38/?title=Overal%20Progress)
