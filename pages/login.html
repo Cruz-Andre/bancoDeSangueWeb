@@ -35,21 +35,21 @@
         <img src="../img/logoBancoDeSangueNew.png" alt="Logo"/>
       </div>
       <h2>Faça seu Login</h2>
-      <form class="formCaixa">
+      <!-- <form class="formCaixa" action="../php/login.php" method="post"> -->
+      <form class="formCaixa" action="../php/login.php" method="post">
         
         <div>
-          <label for="usuario">Usuário</label>
-          <input id="usuario" placeholder="" type="text" />
+          <label for="usrLogin">Usuário (e-mail)</label>
+          <input id="usrLogin" name="usrLogin" placeholder="" type="text" />
         </div>
         
         <div>
-          <label for="senha">Senha</label>
-          <input id="senha" placeholder="" type="password" />
+          <label for="senhaLogin">Senha</label>
+          <input id="senhaLogin" name="senhaLogin" placeholder="" type="password" />
         </div>
 
-        <button>
-          <a style="text-decoration: none; color: white;" href="./logado.html">Entrar</a> <!-- apenas temporário -->
-        </button>
+        <!-- <button type="submit">Entrar</button> -->
+        <button type="submit"><a href="logado.html">Entrar</a></button>
       
       </form>
     </div>

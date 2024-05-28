@@ -25,7 +25,7 @@
   </header>
 
   <main>
-    <form class="formCaixa">
+    <form class="formCaixa" action="../php/cadastro.php" method="post">
       <div class="formCaixaDiv1">
         <h2>Cadastro de Doadores</h2>
       </div>
@@ -33,90 +33,97 @@
       <div class="formCampos">
         <div class="formCamposDiv">
           <div class="formCampoDivNome">
-            <label for="nomeCompleto">Nome Completo</label>
+            <label for="nomeDoador">Nome Completo</label>
               <input
                 type="text" 
-                name="nomeCompleto" 
-                id="nomeCompleto" 
-                autocomplete="nomeCompleto"
+                name="nomeDoador" 
+                id="nomeDoador" 
+                autocomplete="nomeDoador"
                 required
               >
           </div>
 
           <div class="formCampoDivTipo">
-            <label for="tipoSangue">Tipo Sanguíneo</label>
-              <input
-                id="tipoSangue" 
-                name="tipoSangue" 
-                type="text" 
-                autocomplete="tipoSangue"
-                required
-              >
+            <label for="tipoSanguineoDoador">Tipo Sanguíneo</label>
+            <select name="tipoSanguineoDoador" id="tipoSanguineoDoador" required>
+              <option value="" selected disabled hidden>Selecione seu tipo sanguíneo</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
           </div>
 
-          <div class="formCampoDivBairro">
-            <label for="bairro">Bairro</label>
+          <div class="formCampoDivDataNasc">
+            <label for="dataNascimentoDoador">Data de Nascimento</label>
               <input
-                type="text" 
-                name="bairro" 
-                id="bairro" 
-                autocomplete="bairro"
-                required
-              >
-          </div>
-
-          <div class="formCampoDivCidade">
-            <label for="cidade">Cidade</label>
-              <input
-                type="text" 
-                name="cidade" 
-                id="cidade" 
-                autocomplete="cidade"
-                required
-              >
-          </div>
-
-          <div class="formCampoDivUF">
-            <label for="estado">Estado</label>
-              <input
-                type="text" 
-                name="estado" 
-                id="estado" 
-                autocomplete="estado"
+                type="date" 
+                name="dataNascimentoDoador" 
+                id="dataNascimentoDoador" 
+                autocomplete="dataNascimentoDoador"
                 required
               >
           </div>
 
           <div class="formCampoDivCEP">
-            <label for="postal-code">CEP</label>
+            <label for="cepDoador">CEP</label>
               <input
                 type="tel" 
-                name="postal-code" 
-                id="postal-code" 
-                autocomplete="postal-code"
+                name="cepDoador" 
+                id="cepDoador" 
+                autocomplete="cepDoador"
                 maxlength="8"
                 title="O cep deve ter 8 dígitos sem traço" 
                 pattern="[0-9]{8}"
+                required
               >
           </div>
 
-          <div class="formCampoDivDataNasc">
-            <label for="dataNasc">Data de Nascimento</label>
+          <div class="formCampoDivBairro">
+            <label for="bairroDoador">Bairro</label>
               <input
-                type="date" 
-                name="dataNasc" 
-                id="dataNasc" 
-                autocomplete="dataNasc"
+                type="text" 
+                name="bairroDoador" 
+                id="bairroDoador" 
+                autocomplete="bairroDoador"
+                required
               >
           </div>
+
+          <div class="formCampoDivCidade">
+            <label for="cidadeDoador">Cidade</label>
+              <input
+                type="text" 
+                name="cidadeDoador" 
+                id="cidadeDoador" 
+                autocomplete="cidadeDoador"
+                required
+              >
+          </div>
+
+          <div class="formCampoDivUF">
+            <label for="ufdoador">Estado</label>
+              <input
+                type="text" 
+                name="ufdoador" 
+                id="ufdoador" 
+                autocomplete="ufdoador"
+                required
+              >
+          </div>
+
 
           <div class="formCampoDivEmail">
-            <label for="email">E-mail</label>
+            <label for="emailDoador">E-mail</label>
               <input
-              id="email" 
-              name="email" 
+              id="emailDoador" 
+              name="emailDoador" 
               type="email" 
-              autocomplete="email"
+              autocomplete="emailDoador"
               placeholder="nome@dominio.com" 
 							title="O formato do e-mail deve ser: nome@dominio.com" 
 							pattern="[0-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
@@ -125,12 +132,12 @@
           </div>
 
           <div class="formCampoDivSenha">
-            <label for="senha">Senha</label>
+            <label for="senhaLogin">Senha</label>
               <input
-                id="senha" 
-                name="senha" 
+                id="senhaLogin" 
+                name="senhaLogin" 
                 type="password" 
-                autocomplete="new-password"
+                autocomplete="senhaLogin"
                 required
               >
           </div>
@@ -138,7 +145,6 @@
       </div>
 
       <div class="formBotao">
-        <button type="button">Cancel</button>
         <button type="submit">Cadastrar</button>
       </div>
     </form>
