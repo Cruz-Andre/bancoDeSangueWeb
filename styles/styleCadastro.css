@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+coloca o main para preencher todo o espaço disponível 
+colocando o rodapé ancorado no final da página
+Necessário que a tag pai (no caso body) esteja com o display flex  
+main {
+    padding: 20px;
+    flex: 1;
+}
+*/

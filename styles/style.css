@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding: 20px;
+
+  /* coloca o main para preencher todo o espaço disponível 
+     * colocando o rodapé ancorado no final da página
+     * Necessário que a tag pai (no caso body) esteja com o display flex
+     */
+  flex: 1;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.hospital {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}

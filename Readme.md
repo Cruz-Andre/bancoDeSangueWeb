@@ -6,21 +6,21 @@
 <h3>Previsão de conclusão e entrega: Julho de 2024</h3>
 <h3>Autor: André Cruz</h3>
 
-![](https://progress-bar.dev/38/?title=Overal%20Progress)
+![](https://progress-bar.dev/63/?title=Overal%20Progress)
 <br>
 
 <br>
 
 <h3>A aplicação web possui(rá) as seguintes funcionalidades:</h3>
 
-- Página inicial com as informações dos estoques de bolsas de sangue por tipo sanguíneo em cada hospital ![](https://progress-bar.dev/50/)
-- Página inicial de usuário logado com links para as páginas de manutenção ![](https://progress-bar.dev/50/)
-- Página de cadastro de usuários/doadores ![](https://progress-bar.dev/50/)
-- Página de login de usuários ![](https://progress-bar.dev/50/)
-- Página de Manutenção Tipo Sanguíneo ![](https://progress-bar.dev/50/)
+- Página inicial com as informações dos estoques de bolsas de sangue por tipo sanguíneo em cada hospital ![](https://progress-bar.dev/100/)
+- Página inicial de usuário logado com links para as páginas de manutenção ![](https://progress-bar.dev/60/)
+- Página de cadastro de usuários/doadores ![](https://progress-bar.dev/100/)
+- Página de login de usuários ![](https://progress-bar.dev/100/)
+- Página de Manutenção Tipo Sanguíneo ![](https://progress-bar.dev/69/)
 - Página de Manutenção de Plasma ![](https://progress-bar.dev/50/)
 - Página de Manutenção de usuários/doadores ![](https://progress-bar.dev/0/)
-- Back-End CRUD ![](https://progress-bar.dev/0/)
+- Back-End CRUD ![](https://progress-bar.dev/30/)
 - ~~Agendamento de doação de sangue~~
 
 <h3>O projeto está em desenvolvimento utilizando as seguintes tecnologias:</h3>
@@ -38,3 +38,10 @@
 - ~~Novo logotipo;~~ :white_check_mark:
 - ~~Novo design e substituir o bootstrap/tailwind por CSS vanila~~ :white_check_mark:
 - As funcionalidades descritas acima.
+
+# Como rodar o projeto
+- Execute o XAMPP e inicie Apache e MySQL
+- Na maioria dos casos não é necessário configurar o arquivo conexao.php.
+- No seu SGDB de preferência abra o arquivo "bdSangueWEB comandos SQL.sql" para montar o banco.
+- Copie a pasta do repositório para dentro do htdocs do xampp, geralmente: c:\xampp\htdocs
+- No navegador digite: localhost\nome_da_pasta_do_repositorio

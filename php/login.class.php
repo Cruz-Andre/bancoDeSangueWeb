@@ -1,7 +1,18 @@
 <?php 
 	class Login {
+		private $idLogin;
 		private $usrLogin;
 		private $senhaLogin;
+
+		public function setIdLogin($idl) {
+			$this->idLogin = $idl;
+		}
+
+		public function getIdLogin() {
+			return $this->idLogin;
+		}
+
+		//
 
 		public function setUsrLogin($ul) {
 			$this->usrLogin = $ul;

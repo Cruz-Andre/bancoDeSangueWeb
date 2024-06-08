@@ -1,5 +1,6 @@
 <?php 
 	class Cadastro {
+		private $idDoador;
 		private $nomeDoador;
 		private $tipoSanguineoDoador;
 		private $dataNascimentoDoador;
@@ -8,6 +9,16 @@
 		private $cidadeDoador;
 		private $ufdoador;
 		private $emailDoador;
+
+		public function setIdDoador($idd) {
+			$this->idDoador = $idd;
+		}
+		
+		public function getIdDoador() {
+			return $this->idDoador;
+		}
+
+		//
 
 		public function setNomeDoador($nd) {
 			$this->nomeDoador = $nd;
