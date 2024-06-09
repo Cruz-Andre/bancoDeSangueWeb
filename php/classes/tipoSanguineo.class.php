@@ -1,5 +1,5 @@
 <?php 
-    class ManutencaoHospitais {
+    class TipoSanguineo {
         private $idHospital;
         private $nomeHospital;
         private $aPos;

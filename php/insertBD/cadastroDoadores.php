@@ -1,20 +1,20 @@
 <?php
-    include('conexao.php');
-    include('cadastro.class.php');
-    include('login.class.php');
+    include('../conexao.php');
+    include('../classes/doadores.class.php');
+    include('../classes/login.class.php');
 
-    $classeCadastro = new Cadastro();
+    $classeCadDoadores = new Doadores();
     $classeLogin = new Login();
 
-    //Envio das infos para a classe Cadastro
-    $classeCadastro->setNomeDoador($_POST['nomeDoador']);
-    $classeCadastro->setTipoSanguineoDoador($_POST['tipoSanguineoDoador']);
-    $classeCadastro->setDataNascimentoDoador($_POST['dataNascimentoDoador']);
-    $classeCadastro->setCepDoador($_POST['cepDoador']);
-    $classeCadastro->setBairroDoador($_POST['bairroDoador']);
-    $classeCadastro->setCidadeDoador($_POST['cidadeDoador']);
-    $classeCadastro->setUfdoador($_POST['ufdoador']);
-    $classeCadastro->setEmailDoador($_POST['emailDoador']);
+    //Envio das infos para a classe CadastroDoadores
+    $classeCadDoadores->setNomeDoador($_POST['nomeDoador']);
+    $classeCadDoadores->setTipoSanguineoDoador($_POST['tipoSanguineoDoador']);
+    $classeCadDoadores->setDataNascimentoDoador($_POST['dataNascimentoDoador']);
+    $classeCadDoadores->setCepDoador($_POST['cepDoador']);
+    $classeCadDoadores->setBairroDoador($_POST['bairroDoador']);
+    $classeCadDoadores->setCidadeDoador($_POST['cidadeDoador']);
+    $classeCadDoadores->setUfdoador($_POST['ufdoador']);
+    $classeCadDoadores->setEmailDoador($_POST['emailDoador']);
     
     //Envio das infos para a classe Login
     $classeLogin->setUsrLogin($_POST['emailDoador']);
@@ -22,14 +22,14 @@
 
     //Recebendo as infos da classe e colocando em variáveis
     //Usando as variáveis no value do sqlCad!
-    $nome = $classeCadastro->getNomeDoador();
-    $sangue = $classeCadastro->getTipoSanguineoDoador();
-    $data = $classeCadastro->getDataNascimentoDoador();
-    $cep = $classeCadastro->getCepDoador();
-    $bairro = $classeCadastro->getBairroDoador();
-    $cidade = $classeCadastro->getCidadeDoador();
-    $uf = $classeCadastro->getUfdoador();
-    $emailCad = $classeCadastro->getEmailDoador();
+    $nome = $classeCadDoadores->getNomeDoador();
+    $sangue = $classeCadDoadores->getTipoSanguineoDoador();
+    $data = $classeCadDoadores->getDataNascimentoDoador();
+    $cep = $classeCadDoadores->getCepDoador();
+    $bairro = $classeCadDoadores->getBairroDoador();
+    $cidade = $classeCadDoadores->getCidadeDoador();
+    $uf = $classeCadDoadores->getUfdoador();
+    $emailCad = $classeCadDoadores->getEmailDoador();
 
     //Usando as variáveis no value do sqlLog!
     $emailLog = $classeLogin->getUsrLogin();
@@ -68,12 +68,12 @@
 	    echo "
             <script language='javascript' type='text/javascript'>
 		        alert('Cadastro realizado com sucesso!');
-		        window.location.href='../pages/cadastro.html';
+		        window.location.href='../../pages/cadastro.html';
             </script>";			
 		die();
 	    //die — Equivalente a exit()
     } else {
-        echo "Erro: ".$sql."<br>". $conn->error;
+        echo "Erro: ".$sqlCad."<br>". $conn->error;
 	    echo "<br/>";
 	    echo "Não foi possível realizar o cadastro";
     }

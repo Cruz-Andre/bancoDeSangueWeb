@@ -6,7 +6,7 @@
 <h3>Previsão de conclusão e entrega: Julho de 2024</h3>
 <h3>Autor: André Cruz</h3>
 
-![](https://progress-bar.dev/63/?title=Overal%20Progress)
+![](https://progress-bar.dev/70/?title=Overal%20Progress)
 <br>
 
 <br>
@@ -14,13 +14,13 @@
 <h3>A aplicação web possui(rá) as seguintes funcionalidades:</h3>
 
 - Página inicial com as informações dos estoques de bolsas de sangue por tipo sanguíneo em cada hospital ![](https://progress-bar.dev/100/)
-- Página inicial de usuário logado com links para as páginas de manutenção ![](https://progress-bar.dev/60/)
+- Página inicial de usuário logado com links para as páginas de manutenção ![](https://progress-bar.dev/90/)
 - Página de cadastro de usuários/doadores ![](https://progress-bar.dev/100/)
 - Página de login de usuários ![](https://progress-bar.dev/100/)
-- Página de Manutenção Tipo Sanguíneo ![](https://progress-bar.dev/69/)
+- Página de Manutenção Tipo Sanguíneo ![](https://progress-bar.dev/70/)
 - Página de Manutenção de Plasma ![](https://progress-bar.dev/50/)
 - Página de Manutenção de usuários/doadores ![](https://progress-bar.dev/0/)
-- Back-End CRUD ![](https://progress-bar.dev/30/)
+- Back-End CRUD ![](https://progress-bar.dev/50/)
 - ~~Agendamento de doação de sangue~~
 
 <h3>O projeto está em desenvolvimento utilizando as seguintes tecnologias:</h3>

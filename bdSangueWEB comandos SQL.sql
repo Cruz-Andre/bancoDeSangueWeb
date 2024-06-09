@@ -30,7 +30,7 @@ describe cadDoador;
 select * from login;
 select * from cadDoador;
 
-create table hospitalSangue (
+create table tipoSanguineo (
 	idHosp bigint primary key auto_increment,
     nomeHospital varchar(100) not null,
     aPos int not null,
@@ -43,4 +43,4 @@ create table hospitalSangue (
     oNeg int not null
 );
 
-select * from hospitalSangue;
+select * from tipoSanguineo;

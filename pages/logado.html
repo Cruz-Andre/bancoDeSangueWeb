@@ -39,9 +39,11 @@
       </div>
       <label for="filtrarTabela">Filtre:</label>
       <input type="text" name="filtro" value="" id="filtrarTabela" placeholder="Digite o nome do hospital">
+      <button id="preencherTabela" class="btoPreencherTabela">Preencher Tabela</button>
       <table>
         <thead>
           <tr>
+            <th rowspan="2">#</th>
             <th rowspan="2">Hospital</th>
             <th colspan="8">Tipo Sanguíneo</th>
           </tr>
@@ -57,44 +59,10 @@
           </tr>
         </thead>
         <tbody id="tabelaHospitais">
-          <tr class="hospital" id="1">
-            <td class="infoNome">Santa Casa</td>
-            <td class="infoApos">1234</td>
-            <td class="infoAneg">5678</td>
-            <td class="infoBpos">9012</td>
-            <td class="infoBneg">1005</td>
-            <td class="infoABpos">2006</td>
-            <td class="infoABneg">3007</td>
-            <td class="infoOpos">4008</td>
-            <td class="infoOneg">5009</td>
-          </tr>
-
-          <tr class="hospital" id="2">
-            <td class="infoNome">Mãe de Deus</td>
-            <td class="infoApos">4321</td>
-            <td class="infoAneg">5678</td>
-            <td class="infoBpos">9012</td>
-            <td class="infoBneg">1005</td>
-            <td class="infoABpos">2006</td>
-            <td class="infoABneg">3007</td>
-            <td class="infoOpos">4008</td>
-            <td class="infoOneg">5009</td>
-          </tr>
-
-          <tr class="hospital" id="3">
-            <td class="infoNome">Pronto Socorro</td>
-            <td class="infoApos">3412</td>
-            <td class="infoAneg">5678</td>
-            <td class="infoBpos">9012</td>
-            <td class="infoBneg">1005</td>
-            <td class="infoABpos">2006</td>
-            <td class="infoABneg">3007</td>
-            <td class="infoOpos">4008</td>
-            <td class="infoOneg">5009</td>
-          </tr>
+          <!-- Adicione informações para outros hospitais aqui -->
+          
         </tbody>
       </table>
-      <!-- Adicione informações para outros hospitais aqui -->
     </section>
   </main>
 
@@ -103,9 +71,11 @@
     <p class="rodape__texto">&copy; André Cruz - 2023 / <span id="ano"></span> - Banco de Sangue</p>
   </footer>
 
-  <script type="module" src="../js/ano.js"></script>
-  <script type="module" src="../js/filtraHospital.js"></script>
   <script src="../js/modal.js"></script>
+  <script src="../js/preencheTabelaTipoSangue.js"></script>
+  <script src="../js/selecionaLinhaNaTabela.js"></script>
+  <script src="../js/filtraHospital.js"></script>
+  <script src="../js/ano.js"></script>
 
 </body>
 

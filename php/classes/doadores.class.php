@@ -1,5 +1,5 @@
 <?php 
-	class Cadastro {
+	class Doadores {
 		private $idDoador;
 		private $nomeDoador;
 		private $tipoSanguineoDoador;
