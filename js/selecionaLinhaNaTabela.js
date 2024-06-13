@@ -12,10 +12,12 @@ function selecionaLinhaNaTabela() {
             linha.classList.add("selecionado");
 
             console.log(linha)
+            console.log(linha.cells)
+            console.log(linha.cells.length)
+            console.log(linha.cells[0].innerText)
         });
     });
 }
-
 
 
 // let selecionaLinhaNaTabela = document.querySelector("#tabelaHospitais")

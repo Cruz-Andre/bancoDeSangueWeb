@@ -18,7 +18,7 @@
     
     //Envio das infos para a classe Login
     $classeLogin->setUsrLogin($_POST['emailDoador']);
-    $classeLogin->setSenhaLogin($_POST['senhaLogin']);
+    $classeLogin->setSenhaLogin(hash("sha256",$_POST['senhaLogin']));
 
     //Recebendo as infos da classe e colocando em variáveis
     //Usando as variáveis no value do sqlCad!

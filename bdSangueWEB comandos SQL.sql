@@ -5,8 +5,10 @@ use bdsangueweb;
 create table login (
 	idLogin bigint primary key auto_increment,
 	usrLogin varchar(100) unique not null,
-    senhaLogin varchar(50) not null
+    senhaLogin varchar(64) not null
 );
+
+alter table login modify column senhaLogin varchar(64);
 
 create table cadDoador (
 	idDoador bigint primary key auto_increment,
