@@ -17,7 +17,7 @@
 
     //Recebendo os dados da classe ManutencaoHospitais
     //Usando essas variávies no values do sqlMHCad
-    $IDHosp = $classeTS->getIdHospital();
+    $IDHosp = $classeTS->getIdHosp();
     $NomeHosp = $classeTS->getNomeHospital();
     $Amais = $classeTS->getAPos();
     $Amenos = $classeTS->getANeg();
@@ -47,7 +47,7 @@
         echo "
             <script language='javascript' type='text/javascript'>
                 alert('Atualização realizada com sucesso!');
-                window.location.href='../../pages/manutencaoTipoSanguineo.html';
+                window.location.href='../../pages/manutencaoTipoSanguineo.php';
             </script>";
         die();
         //die — Equivalente a exit()

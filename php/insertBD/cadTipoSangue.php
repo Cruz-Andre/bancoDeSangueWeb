@@ -1,6 +1,9 @@
 <?php 
     include('../conexao.php');
     include('../classes/tipoSanguineo.class.php');
+    include_once('../funcoes/mostraMensagemRedireciona.php');
+    include_once('../funcoes/validaInputsTipoSangue.php');
+    include_once('../funcoes/inserirTipoSangueBD.php');
     
     $classeTS = new TipoSanguineo();
 
@@ -17,7 +20,7 @@
 
     //Recebendo os dados da classe ManutencaoHospitais
     //Usando essas variávies no values do sqlMHCad
-    $IDHosp = $classeTS->getIdHospital();
+    $IDHosp = $classeTS->getIdHosp();
     $NomeHosp = $classeTS->getNomeHospital();
     $Amais = $classeTS->getAPos();
     $Amenos = $classeTS->getANeg();
@@ -28,30 +31,45 @@
     $Omais = $classeTS->getOPos();
     $Omenos = $classeTS->getONeg();
 
-    $sqlTS = "
-        INSERT INTO tipoSanguineo(
-        nomeHospital, aPos, aNeg, bPos, bNeg, abPos, abNeg, oPos, oNeg) 
-        VALUES ('$NomeHosp', '$Amais', '$Amenos', '$Bmais', '$Bmenos', '$ABmais', '$ABmenos', '$Omais', '$Omenos')
-    ";
+    validaInputsTipoSangue($NomeHosp, $Amais, $Amenos, $Bmais, $Bmenos, $ABmais, $ABmenos, $Omais, $Omenos);
 
-    //query($sql) - realiza uma consulta simples no banco
-    if ($conn->query($sqlTS) === TRUE) {
-        echo "
-            <script language='javascript' type='text/javascript'>
-                alert('Cadastro realizado com sucesso!');
-                window.location.href='../../pages/manutencaoTipoSanguineo.html';
-            </script>";			
-        die();
-        //die — Equivalente a exit()
+    if (inserirTipoSangueBD($conn, $NomeHosp, $Amais, $Amenos, $Bmais, $Bmenos, $ABmais, $ABmenos, $Omais, $Omenos)) {
 
+        mostraMensagemRedireciona('Cadastro realizado com sucesso!', '../../pages/manutencaoTipoSanguineo.php');
+        
     } else {
 
-        echo "Erro: ".$sqlTS."<br>".$conn->error;
+        echo "Erro: ".$sqlTS."<br>". $conn->error;
         echo "<br/>";
-        echo "<h1>Não foi possível realizar o cadastro, veja mensagem de erro acima<h1>";
+	    echo "Não foi possível realizar o cadastro";
     }
 
-    //finaliza a conexão com o banco
-    $conn->close(); 
+    mysqli_close($conn);
+
+    // $sqlTS = "
+    //     INSERT INTO tipoSanguineo(
+    //     nomeHospital, aPos, aNeg, bPos, bNeg, abPos, abNeg, oPos, oNeg) 
+    //     VALUES ('$NomeHosp', '$Amais', '$Amenos', '$Bmais', '$Bmenos', '$ABmais', '$ABmenos', '$Omais', '$Omenos')
+    // ";
+
+    // //query($sql) - realiza uma consulta simples no banco
+    // if ($conn->query($sqlTS) === TRUE) {
+    //     echo "
+    //         <script language='javascript' type='text/javascript'>
+    //             alert('Cadastro realizado com sucesso!');
+    //             window.location.href='../../pages/manutencaoTipoSanguineo.html';
+    //         </script>";			
+    //     die();
+    //     //die — Equivalente a exit()
+
+    // } else {
+
+    //     echo "Erro: ".$sqlTS."<br>".$conn->error;
+    //     echo "<br/>";
+    //     echo "<h1>Não foi possível realizar o cadastro, veja mensagem de erro acima<h1>";
+    // }
+
+    // //finaliza a conexão com o banco
+    // $conn->close(); 
 
 ?>

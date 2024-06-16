@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding: 0.50rem;
+
+  /* coloca o main para preencher todo o espaço disponível 
+    * colocando o rodapé ancorado no final da página
+    * Necessário que a tag pai (no caso body) esteja com o display flex
+  */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+  
+.background-image {
+  position: absolute;
+  width: 40%; /* Tamanho da imagem */
+  opacity: 0.3; /* Transparência da imagem */
+  z-index: -1; /* Garante que a imagem fique atrás do texto */
+}
+
+.aviso {
+  color: #000;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-decoration: none;
+  text-align: center;
+  z-index: 1; /* Garante que o texto fique na frente da imagem */
+}
+
+.botaoAS{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color: rgb(155 6 2);
+	border-color: rgb(220 38 38);
+  display: block;
+  clear: both;
+  border-radius: 0.375rem;
+}
+
+.botaoAS:hover {
+  background-color: rgb(220 38 38);
+  border-color: rgb(155 6 2);
+}
+
+.botaoAS:active {
+  background-color: rgb(155 6 2);
+	border-color: rgb(220 38 38);
+	margin-top:0px;
+	border: 0;
+}
+
+
+.botaoAS[disabled=disabled], .botaoAS:disabled {
+  background-color: gray;
+	border-color: darkgray;
+}

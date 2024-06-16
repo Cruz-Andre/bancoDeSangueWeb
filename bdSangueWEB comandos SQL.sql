@@ -4,11 +4,11 @@ use bdsangueweb;
 
 create table login (
 	idLogin bigint primary key auto_increment,
-	usrLogin varchar(100) unique not null,
+	usrLogin varchar(100) not null,
     senhaLogin varchar(64) not null
 );
 
-alter table login modify column senhaLogin varchar(64);
+-- alter table login modify column senhaLogin varchar(64);
 
 create table cadDoador (
 	idDoador bigint primary key auto_increment,
@@ -19,7 +19,7 @@ create table cadDoador (
     bairroDoador varchar(50) not null,
 	cidadeDoador varchar(80) not null,
     ufdoador varchar(25) not null,
-    emailDoador varchar(100) unique not null	
+    emailDoador varchar(100) not null	
 );
 
 -- chave estrangeira idLogin na tabela login. referencia o idDoador da tabela doador.

@@ -23,7 +23,7 @@
 
             $tipoSanguineo = new TipoSanguineo();
 
-            $tipoSanguineo->setIdHospital($row["idHosp"]);
+            $tipoSanguineo->setIdHosp($row["idHosp"]);
             $tipoSanguineo->setNomeHospital($row["nomeHospital"]);
             $tipoSanguineo->setAPos($row["aPos"]);
             $tipoSanguineo->setANeg($row["aNeg"]);
@@ -36,7 +36,7 @@
             
             // Serialização manual
             $TSarray[] = [
-                'idHosp' => $tipoSanguineo->getIdHospital(),
+                'idHosp' => $tipoSanguineo->getIdHosp(),
                 'nomeHospital' => $tipoSanguineo->getNomeHospital(),
                 'aPos' => $tipoSanguineo->getAPos(),
                 'aNeg' => $tipoSanguineo->getANeg(),

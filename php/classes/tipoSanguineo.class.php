@@ -1,6 +1,6 @@
 <?php 
     class TipoSanguineo {
-        private $idHospital;
+        private $idHosp;
         private $nomeHospital;
         private $aPos;
         private $aNeg;
@@ -11,12 +11,12 @@
         private $oPos;
         private $oNeg;
 
-        public function setIdHospital($idh) {
-            $this->idHospital = $idh;
+        public function setIdHosp($idh) {
+            $this->idHosp = $idh;
         }
 
-        public function getIdHospital() {
-            return $this->idHospital;
+        public function getIdHosp() {
+            return $this->idHosp;
         }
 
         public function setNomeHospital($nh) {

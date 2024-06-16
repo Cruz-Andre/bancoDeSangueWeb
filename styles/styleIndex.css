@@ -25,6 +25,14 @@ main {
   flex: 1;
 }
 
+.sessao p {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(155 6 2);
+}
+
 
 .caixa {
   width: 100%;
@@ -70,14 +78,31 @@ section h2 {
   max-height: 80%;
 }
 
-button{
+.botoesMT {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.botaoDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+button, .botaoMT {
+  text-decoration: none;
+  text-align: center;
 	padding: .5em 2em;
 	border: 0;
 	border-bottom: 3px solid;
 	font-size: 1.2em;
 	cursor: pointer;
 	margin: 0;
-	margin-top: -3px;
+	margin-top: -3px; /* Evita o efeito de subida dos elementos abaixo do botão */
 	color: #fff;
 	background-color: rgb(155 6 2);
 	border-color: rgb(220 38 38);
@@ -86,12 +111,19 @@ button{
   border-radius: 0.375rem;
 }
 
-button:active{
+button:hover, .botaoMT:hover {
+  background-color: rgb(220 38 38);
+  border-color: rgb(155 6 2);
+}
+
+button:active, .botaoMT:active {
+  background-color: rgb(155 6 2);
+	border-color: rgb(220 38 38);
 	margin-top:0px;
 	border: 0;
 }
 
-button[disabled=disabled], button:disabled {
+button[disabled=disabled], button:disabled, .botaoMT[disabled=disabled], .botaoMT:disabled {
   background-color: gray;
 	border-color: darkgray;
 }
@@ -110,6 +142,7 @@ label {
   color: #555;
   display: block;
   margin-bottom: .2em;
+  font-weight: bold;
 }
 
 #filtrarTabela {
@@ -144,5 +177,15 @@ th {
 @media (min-width: 600px) {
   table {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .botoesMT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    justify-content: center;
   }
 }

@@ -29,7 +29,7 @@ header {
 }
 
 .navbar img {
-    width: 8%;
+    width: 150px;
 }
 
 .menu {
@@ -45,12 +45,25 @@ header {
     font-size: 2rem;
 }
 
-@media (max-width: 420px) {
+.loginTitulo {
+    text-align: center;
+    color: #fff;
+  }
+
+@media (max-width: 500px) {
     .login {
         column-gap: 3rem;
     }
 
+    .loginTitulo{
+        font-size: 70%;
+    }
+
     .login li a {
-        font-size: 1.75rem;
+        font-size: 70%;
+    }
+
+    .navbar img {
+        width: 20%;
     }
 }

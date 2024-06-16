@@ -25,6 +25,13 @@ main {
   flex: 1;
 }
 
+.sessao p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(155 6 2);
+}
+
 
 .caixa {
   width: 100%;
@@ -45,6 +52,7 @@ section h2 {
 
 label {
   color: #555;
+  font-weight: bold;
 }
 
 #filtrarTabela, .grupo1 input {
@@ -106,6 +114,7 @@ th {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 1rem 0 1rem 0;
+  text-align: center;
 }
 
 .qtdPlasma {
@@ -160,7 +169,7 @@ th {
   column-gap: 1rem;
 }
 
-button{
+button {
 	padding: .5em 2em;
 	border: 0;
 	border-bottom: 3px solid;
@@ -176,7 +185,14 @@ button{
   border-radius: 0.375rem;
 }
 
-button:active{
+button:hover {
+  background-color: rgb(220 38 38);
+  border-color: rgb(155 6 2);
+}
+
+button:active {
+  background-color: rgb(155 6 2);
+	border-color: rgb(220 38 38);
 	margin-top:0px;
 	border: 0;
 }
