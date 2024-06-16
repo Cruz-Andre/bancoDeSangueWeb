@@ -10,31 +10,21 @@ header {
     justify-content: space-evenly;
 }
 
-.navbar ul {
-    margin: 0;
-    padding: 0;
+.imagemLogo {
+    width: 33.33%;
+    text-align: center;
 }
 
-.navbar ul li {
-    list-style: none;
-}
-
-.navbar ul li a:hover {
-    color: #a35552;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.navbar img {
+.imagemLogo img {
     width: 150px;
 }
 
-.menu {
-    display: flex;
+.loginTitulo {
+    width: 33.33%;
+    color: #fff;
     font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
 }
 
 .login {
@@ -42,28 +32,38 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 5rem;
+    width: 33.33%;
+    margin: 0;
+    padding: 0;
     font-size: 2rem;
+    text-align: center;
+    list-style: none;
 }
 
-.loginTitulo {
-    text-align: center;
+.login a {
+    text-decoration: none;
     color: #fff;
-  }
+    margin-bottom: 1rem;
+}
+
+.login li a:hover {
+    color: #a35552;
+}
 
 @media (max-width: 500px) {
+    .navbar img {
+        width: 100px;
+    }
+
     .login {
         column-gap: 3rem;
     }
 
     .loginTitulo{
-        font-size: 70%;
+        font-size: 1.5rem;
     }
 
     .login li a {
         font-size: 70%;
-    }
-
-    .navbar img {
-        width: 20%;
     }
 }

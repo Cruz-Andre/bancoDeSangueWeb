@@ -22,10 +22,10 @@
 
         <header>
           <nav class="navbar">
-            <img src="../img/logoBancoDeSangueNew.png" alt="logo Doação">
-            <ul class="menu">
-              <li><a href="#">Manutenção de Plasma</a></li>
-            </ul>
+            <div class="imagemLogo">
+              <img src="../img/logoBancoDeSangueNew.png" alt="logo Doação">
+            </div>
+            <h2 class="loginTitulo">Manutenção de Plasma</h2>
             <ul class="login">
               <li><a href="./logado.php">Voltar</a></li>
             </ul>

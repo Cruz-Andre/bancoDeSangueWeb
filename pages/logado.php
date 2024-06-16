@@ -24,9 +24,11 @@
 
         <header>
           <nav class="navbar">
-            <img src="../img/logoBancoDeSangueNew.png" alt="logo Doação">
+            <div class="imagemLogo">
+              <img src="../img/logoBancoDeSangueNew.png" alt="logo Doação">
+            </div>
+            <h2 class="loginTitulo">Manutenção Banco de Sangue</h2>
             <ul class="login">
-              <li class="loginTitulo">Manutenção Banco de Sangue</li>
               <li><a href="./logado.php?logout">Sair</a></li>
             </ul>
           </nav>
