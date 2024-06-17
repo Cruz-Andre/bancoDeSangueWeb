@@ -9,6 +9,7 @@
 		private $cidadeDoador;
 		private $ufdoador;
 		private $emailDoador;
+		private $dataUltimaDoacao;
 
 		public function setIdDoador($idd) {
 			$this->idDoador = $idd;
@@ -100,6 +101,20 @@
 
 		public function getEmailDoador() {
 			return $this->emailDoador;
+		}
+
+		//
+
+		public function setDataUltimaDoacao($dud) {
+			$this->dataUltimaDoacao = $dud;
+		}
+
+		public function getDataUltimaDoacao() {
+			return $this->dataUltimaDoacao;
+		}
+
+		public function getDataUltimaDoacaoFormatada() {
+			return date("d/m/Y", strtotime($this->dataUltimaDoacao));
 		}
 	}
 ?>

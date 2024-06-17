@@ -49,7 +49,7 @@
           <div class="formCampoDivTipo">
             <label for="tipoSanguineoDoador">Tipo Sanguíneo</label>
             <select name="tipoSanguineoDoador" id="tipoSanguineoDoador" required>
-              <option value="" selected disabled hidden>Selecione seu tipo sanguíneo</option>
+              <option value="" selected disabled hidden>Selecione</option>
               <option value="A+">A+</option>
               <option value="A-">A-</option>
               <option value="B+">B+</option>
@@ -68,6 +68,17 @@
                 name="dataNascimentoDoador" 
                 id="dataNascimentoDoador" 
                 autocomplete="dataNascimentoDoador"
+                required
+              >
+          </div>
+
+          <div class="formCampoDivDataUltDoa">
+            <label for="dataUltimaDoacao">Data da última doação</label>
+              <input
+                type="date" 
+                name="dataUltimaDoacao" 
+                id="dataUltimaDoacao" 
+                autocomplete="dataUltimaDoacao"
                 required
               >
           </div>

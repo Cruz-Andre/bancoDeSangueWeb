@@ -39,6 +39,7 @@
             $cadDoador->setCidadeDoador($row["cidadeDoador"]);
             $cadDoador->setUfdoador($row["ufdoador"]);
             $cadDoador->setEmailDoador($row["emailDoador"]);
+            $cadDoador->setDataUltimaDoacao($row["dataUltimaDoacao"]);
             
             // Serialização manual
             $arrayD[] = [
@@ -51,6 +52,7 @@
                 'cidadeDoador' => $cadDoador->getCidadeDoador(),
                 'ufdoador' => $cadDoador->getUfdoador(),
                 'emailDoador' => $cadDoador->getEmailDoador(),
+                'dataUltimaDoacao' => $cadDoador->getDataUltimaDoacaoFormatada()
             ];
         }
         

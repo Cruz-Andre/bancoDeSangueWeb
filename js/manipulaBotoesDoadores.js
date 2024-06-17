@@ -5,6 +5,6 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
     if (action === 'cadastrar') {
         this.action = '../php/insertBD/cadastroDoadores.php'; // URL para a ação de cadastro
     } else if (action === 'atualizar') {
-        this.action = '../php/updateBD/'; // URL para a ação de atualizar
+        this.action = '../php/updateBD/atualizaDoadores.php'; // URL para a ação de atualizar
     }
 });

@@ -88,7 +88,7 @@
             <form id="formTS" method="post">
               <div class="grupo1">
                 <label for="idHosp">#</label>
-                <input id="idHosp" name="idHosp" type="number" readonly>
+                <input id="idHosp" name="idHosp" type="number" readonly required>
 
                 <label for="nomeHosp">Nome do Hospital:</label>
                 <input id="nomeHosp" name="nomeHosp" type="text" placeholder="Digite o nome do Hospital" required>

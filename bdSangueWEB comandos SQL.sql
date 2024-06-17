@@ -21,14 +21,16 @@ create table cadDoador (
     bairroDoador varchar(50) not null,
 	cidadeDoador varchar(80) not null,
     ufdoador varchar(25) not null,
-    emailDoador varchar(100) not null	
+    emailDoador varchar(100) not null,
+	dataUltimaDoacao date
 );
 
 -- drop table cadDoador;
 
 -- chave estrangeira idLogin na tabela login. referencia o idDoador da tabela doador.
 alter table login add constraint FK_login_cadDoador
-foreign key (idLogin) references cadDoador (idDoador);
+foreign key (idLogin) references cadDoador (idDoador)
+on update cascade;
 
 describe login;
 describe cadDoador;

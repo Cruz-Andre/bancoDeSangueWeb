@@ -6,7 +6,7 @@
 <h3>Previsão de conclusão e entrega: 25 de junho de 2024</h3>
 <h3>Autor: André Cruz</h3>
 
-![](https://progress-bar.dev/82/?title=Overal%20Progress)
+![](https://progress-bar.dev/97/?title=Overal%20Progress)
 <br>
 
 <br>
@@ -19,8 +19,8 @@
 - Página de login de usuários ![](https://progress-bar.dev/100/)
 - Página de Manutenção Tipo Sanguíneo ![](https://progress-bar.dev/100/)
 - Página de Manutenção de Plasma ![](https://progress-bar.dev/100/)
-- Página de Manutenção de usuários/doadores ![](https://progress-bar.dev/0/)
-- Back-End CRUD ![](https://progress-bar.dev/60/)
+- Página de Manutenção de usuários/doadores ![](https://progress-bar.dev/100/)
+- Back-End CRUD ![](https://progress-bar.dev/80/)
 - ~~Agendamento de doação de sangue~~
 
 <h3>O projeto está em desenvolvimento utilizando as seguintes tecnologias:</h3>

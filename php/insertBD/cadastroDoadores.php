@@ -18,6 +18,7 @@
     $classeCadDoadores->setCidadeDoador($_POST['cidadeDoador']);
     $classeCadDoadores->setUfdoador($_POST['ufdoador']);
     $classeCadDoadores->setEmailDoador($_POST['emailDoador']);
+    $classeCadDoadores->setDataUltimaDoacao($_POST['dataUltimaDoacao']);
 
     //Envio das infos para a classe Login
     $classeLogin->setUsrLogin($_POST['emailDoador']);
@@ -27,12 +28,13 @@
     //Usando as variáveis no value do sqlCad!
     $nome = $classeCadDoadores->getNomeDoador();
     $sangue = $classeCadDoadores->getTipoSanguineoDoador();
-    $data = $classeCadDoadores->getDataNascimentoDoador();
+    $dataNasc = $classeCadDoadores->getDataNascimentoDoador();
     $cep = $classeCadDoadores->getCepDoador();
     $bairro = $classeCadDoadores->getBairroDoador();
     $cidade = $classeCadDoadores->getCidadeDoador();
     $uf = $classeCadDoadores->getUfdoador();
     $emailCad = $classeCadDoadores->getEmailDoador();
+    $dataUltimaDoacao = $classeCadDoadores->getDataUltimaDoacao();
 
     //Recebendo as infos da classe e colocando em variáveis
     //Usando as variáveis no value do sqlLog!
@@ -41,7 +43,7 @@
 
     validaInputsImportantesCad($emailCad, $senha);
     
-    if (inserirUsuarioBD($conn, $nome, $sangue, $data, $cep, $bairro, $cidade, $uf, $emailCad, $emailLog, $senha)) {
+    if (inserirUsuarioBD($conn, $nome, $sangue, $dataNasc, $dataUltimaDoacao, $cep, $bairro, $cidade, $uf, $emailCad, $emailLog, $senha)) {
         
         // Obtenha a URL da página anterior
         $referrer_url = $_SERVER['HTTP_REFERER'];

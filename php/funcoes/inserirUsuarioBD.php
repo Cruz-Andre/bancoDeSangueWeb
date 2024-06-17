@@ -1,6 +1,6 @@
 <?php
     // Função para inserir o usuário no banco de dados
-    function inserirUsuarioBD($conn, $nome, $sangue, $data, $cep, $bairro, $cidade, $uf, $emailCad, $emailLog, $senha) {
+    function inserirUsuarioBD($conn, $nome, $sangue, $dataN, $dataU, $cep, $bairro, $cidade, $uf, $emailCad, $emailLog, $senha) {
 
         mysqli_begin_transaction($conn);
 
@@ -15,17 +15,19 @@
                     bairroDoador,
                     cidadeDoador,
                     ufdoador,
-                    emailDoador
+                    emailDoador,
+                    dataUltimaDoacao
                 ) 
                 values (
                     '$nome',
                     '$sangue',
-                    '$data',
+                    '$dataN',
                     '$cep',
                     '$bairro',
                     '$cidade',
                     '$uf',
-                    '$emailCad'
+                    '$emailCad',
+                    '$dataU'
                 );        
             ";
             if (!mysqli_query($conn, $sqlCad)) {

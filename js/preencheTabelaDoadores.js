@@ -19,6 +19,7 @@ function preencheTabelaDoadores() {
             <td class="infoNome">${cadDoador.nomeDoador}</td>
             <td>${cadDoador.tipoSanguineoDoador}</td>
             <td>${cadDoador.dataNascimentoDoador}</td>
+            <td>${cadDoador.dataUltimaDoacao}</td>
             <td>${cadDoador.cepDoador}</td>
             <td>${cadDoador.bairroDoador}</td>
             <td>${cadDoador.cidadeDoador}</td>
