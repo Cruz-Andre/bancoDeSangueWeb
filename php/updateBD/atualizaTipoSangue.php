@@ -4,7 +4,8 @@
     
     $classeTS = new TipoSanguineo();
 
-    //Envio dos dados para a classe ManutencaoHospitais
+    //Envio dos dados para a classe tipoSanguineo.class
+    $classeTS->setIdHosp($_POST['idHosp']);
     $classeTS->setNomeHospital($_POST['nomeHosp']);
     $classeTS->setAPos($_POST['Amais']);
     $classeTS->setANeg($_POST['Amenos']);
@@ -15,8 +16,8 @@
     $classeTS->setOPos($_POST['Omais']);
     $classeTS->setONeg($_POST['Omenos']);
 
-    //Recebendo os dados da classe ManutencaoHospitais
-    //Usando essas variávies no values do sqlMHCad
+    //Recebendo os dados da classe tipoSanguineo.class
+    //Usando essas variávies no values do sqlMHAtu
     $IDHosp = $classeTS->getIdHosp();
     $NomeHosp = $classeTS->getNomeHospital();
     $Amais = $classeTS->getAPos();
@@ -30,7 +31,7 @@
 
     //Supondo que o ID do registro a ser atualizado seja fornecido
     $sqlMHAtu = "
-        update hospitalSangue SET
+        update tipoSanguineo SET
         nomeHospital = '$NomeHosp',
         aPos = '$Amais',
         aNeg = '$Amenos',

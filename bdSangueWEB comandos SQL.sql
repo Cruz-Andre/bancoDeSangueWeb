@@ -8,6 +8,8 @@ create table login (
     senhaLogin varchar(64) not null
 );
 
+-- drop table login;
+
 -- alter table login modify column senhaLogin varchar(64);
 
 create table cadDoador (
@@ -21,6 +23,8 @@ create table cadDoador (
     ufdoador varchar(25) not null,
     emailDoador varchar(100) not null	
 );
+
+-- drop table cadDoador;
 
 -- chave estrangeira idLogin na tabela login. referencia o idDoador da tabela doador.
 alter table login add constraint FK_login_cadDoador
@@ -46,3 +50,13 @@ create table tipoSanguineo (
 );
 
 select * from tipoSanguineo;
+
+create table plasmaSanguineo (
+	idPlasma bigint primary key auto_increment,
+    nomeHospital varchar(100) not null,
+    plasma int not null
+);
+
+-- drop table plasmaSanguineo;
+
+select * from plasmaSanguineo;

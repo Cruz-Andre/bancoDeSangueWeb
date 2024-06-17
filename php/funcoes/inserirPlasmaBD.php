@@ -1,0 +1,31 @@
+<?php
+    // Função para inserir o usuário no banco de dados
+    function inserirPlasmaBD($conn, $NomeHosp, $plasma) {
+
+        mysqli_begin_transaction($conn);
+
+        try {
+            //INSERT
+            $sqlPlasma = "
+                INSERT INTO plasmaSanguineo(nomeHospital, plasma) 
+                VALUES ('$NomeHosp', '$plasma')
+            ";
+            if (!mysqli_query($conn, $sqlPlasma)) {
+                throw new Exception("Erro ao cadastrar: ".mysqli_error($conn));
+            }
+
+            // Se tudo estiver bem, confirma a transação
+            mysqli_commit($conn);
+            return true;
+
+        } catch (Exception $e) {
+            // Em caso de erro, desfaz a transação
+            mysqli_rollback($conn);
+            return false;
+
+        } finally {
+            // Fecha a conexão com o banco de dados
+            mysqli_close($conn);
+        }
+    }
+?>

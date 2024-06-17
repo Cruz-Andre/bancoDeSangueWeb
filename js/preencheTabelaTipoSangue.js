@@ -34,5 +34,13 @@ function preencheTabelaTS() {
       });
 };
 
+
 document.addEventListener('DOMContentLoaded', preencheTabelaTS);
-document.getElementById('preencherTabela').addEventListener('click', preencheTabelaTS);
+
+//console.log(window.location.pathname)
+//if para não gerar erro no console da pagina inicial
+if (window.location.pathname !== '/inf4n221/bancoDeSangueWeb/index.html') {
+  document.getElementById('preencherTabela').addEventListener('click', preencheTabelaTS);
+}
+
+//document.getElementById('preencherTabela').addEventListener('click', preencheTabelaTS);

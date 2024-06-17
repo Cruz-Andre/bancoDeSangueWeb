@@ -40,20 +40,32 @@
     $senha = $classeLogin->getSenhaLogin();
 
     validaInputsImportantesCad($emailCad, $senha);
-
+    
     if (inserirUsuarioBD($conn, $nome, $sangue, $data, $cep, $bairro, $cidade, $uf, $emailCad, $emailLog, $senha)) {
-
-        mostraMensagemRedireciona('Usuário cadastrado com sucesso!', '../../pages/cadastro.html');
         
-    } else {
+        // Obtenha a URL da página anterior
+        $referrer_url = $_SERVER['HTTP_REFERER'];
+        echo "<script>console.log('Da onde vim URL: " . $referrer_url . "');</script>";
 
+        // Verifique se a URL da página anterior é a de cadastro
+        if ($referrer_url == 'http://localhost/inf4n221/bancoDeSangueWeb/pages/cadastro.html') {
+
+            mostraMensagemRedireciona('Usuário cadastrado com sucesso!', '../../pages/cadastro.html');
+
+        } else {
+            // Se não for, redirecione para a página de manutenção de cadastro
+            mostraMensagemRedireciona('Usuário cadastrado com sucesso!', '../../pages/manutencaoCadastro.php');
+        }
+
+    } else {
+        
         echo "Erro: ".$sqlCad."<br>". $conn->error;
         echo "<br/>";
         echo "Erro: ".$sqlLog."<br>". $conn->error;
 	    echo "<br/>";
 	    echo "Não foi possível realizar o cadastro";
     }
-
+    
     mysqli_close($conn);
 
     // $sqlCad = "

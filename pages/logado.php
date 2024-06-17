@@ -48,7 +48,7 @@
           <div class="botoesMT">
             <a class="botaoMT" href="./manutencaoTipoSanguineo.php">Manutenção das bolsas de sangue</a>
             <a class="botaoMT" href="./manutencaoPlasma.php">Manutenção dos Plasmas</a>
-            <a class="botaoMT" href="#">Manutenção dos Doadores</a>
+            <a class="botaoMT" href="./manutencaoCadastro.php">Manutenção dos Doadores</a>
           </div>
 
           <section class="caixa">

@@ -48,6 +48,10 @@
 			return $this->dataNascimentoDoador;
 		}
 
+		public function getDataNascimentoDoadorFormatada() {
+			return date("d/m/Y", strtotime($this->dataNascimentoDoador));
+		}
+
 		// 
 
 		public function setCepDoador($cepd) {

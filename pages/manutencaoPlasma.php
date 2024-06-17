@@ -57,18 +57,6 @@
                   <td class="infoNome">Santa Casa</td>
                   <td class="infoApos">1234</td>
                 </tr>
-
-                <tr class="hospital" id="seleciona">
-                  <td class="infoCodigo">2</td>
-                  <td class="infoNome">Mãe de Deus</td>
-                  <td class="infoApos">5678</td>
-                </tr>
-
-                <tr class="hospital" id="seleciona">
-                  <td class="infoCodigo">3</td>
-                  <td class="infoNome">Pronto Socorro</td>
-                  <td class="infoApos">9012</td>
-                </tr>
               </tbody>
             </table>
             <!-- Adicione informações para outros hospitais aqui -->
@@ -76,26 +64,29 @@
 
           <section class="caixa">
             <h2 id="tituloForm">Manutenção Plasmas</h2>
-            <button id="preencherHosp" class="btoPreencherCampos" title="selecione um hospital na tabela e depois clique">Preencher Campos</button>
+            <button id="preencherInputs" class="btoPreencherCampos" title="selecione um hospital na tabela e depois clique">Preencher Campos</button>
             <ul id="mensagensErro">
               <li></li>
             </ul>
-            <form id="formAdiciona">
+            <form id="formPlasma" method="post">
               <div class="grupo1">
+                <label for="idPlasma">#</label>
+                <input id="idPlasma" name="idPlasma" type="number" readonly>
+                
                 <label for="nomeHosp">Nome do Hospital:</label>
-                <input id="nomeHosp" name="nomeHosp" type="text" placeholder="Digite o nome do Hospital" class="campo">
+                <input id="nomeHosp" name="nomeHosp" type="text" placeholder="Digite o nome do Hospital" required >
               </div>
 
               <div class="grupo2">
                 <div class="qtdPlasma">
                   <label for="plasma">Quantidade de Plasma</label>
-                  <input id="plasma" name="plasma" type="number" class="campo campo-medio">
+                  <input id="plasma" name="plasma" type="number" title="Digite a quantidade de plasma" required >
                 </div>
 
               </div>
               <div class="botoes">
-                <button id="atualizarHosp" title="Atualiza os dados do hospital selecionado">Atualizar</button>
-                <button id="cadastrarHosp" title="Cadastra um novo Hospital com a quantidade de plasma">Cadastrar</button>
+                <button id="atualizarHosp" name="action" value="atualizar" title="Atualiza os dados do hospital selecionado">Atualizar</button>
+                <button id="cadastrarHosp" name="action" value="cadastrar" title="Cadastra um novo Hospital com a quantidade de plasma">Cadastrar</button>
               </div>
             </form>
           </section>
@@ -106,9 +97,13 @@
           <p class="rodape__texto">&copy; André Cruz - 2023 / <span id="ano"></span> - Banco de Sangue</p>
         </footer>
 
-        <script type="module" src="../js/ano.js"></script>
-        <script type="module" src="../js/manutencaoHosp.js"></script>
+        <script src="../js/preencheTabelaPlasma.js"></script>
+        <script src="../js/manipulaBotoesPS.js"></script>
+        <script src="../js/selecionaLinhaNaTabela.js"></script>
+        <script src="../js/preencheInputsPS.js"></script>
+
         <script type="module" src="../js/filtraHospital.js"></script>
+        <script type="module" src="../js/ano.js"></script>
       </body>
 
       </html>

@@ -81,47 +81,50 @@
           
           <section class="caixa">
             <h2 id="tituloForm">Manutenção dos Tipos Sanguíneos</h2>
-            <button id="preencherHosp" class="btoPreencherCampos" title="selecione um hospital na tabela e depois clique">Preencher Campos</button>
+            <button id="preencherInputs" class="btoPreencherCampos" title="selecione um hospital na tabela e depois clique">Preencher Campos</button>
             <ul id="mensagensErro">
               <li></li>
             </ul>
             <form id="formTS" method="post">
               <div class="grupo1">
+                <label for="idHosp">#</label>
+                <input id="idHosp" name="idHosp" type="number" readonly>
+
                 <label for="nomeHosp">Nome do Hospital:</label>
-                <input id="nomeHosp" name="nomeHosp" type="text" placeholder="Digite o nome do Hospital" class="campo" required>
+                <input id="nomeHosp" name="nomeHosp" type="text" placeholder="Digite o nome do Hospital" required>
               </div>
               <div class="grupo2">
                 <div class="sangueA">
                   <label for="Amais">Sangue A+</label>
-                  <input id="Amais" name="Amais" type="number" class="campo campo-medio" required>
+                  <input id="Amais" name="Amais" type="number" required>
                 
                   <label for="Amenos">Sangue A-</label>
-                  <input id="Amenos" name="Amenos" type="number" class="campo campo-medio" required>
+                  <input id="Amenos" name="Amenos" type="number" required>
                 </div>
               
                 <div class="sangueB">
                   <label for="Bmais">Sangue B+</label>
-                  <input id="Bmais" name="Bmais" type="number" class="campo campo-medio" required>
+                  <input id="Bmais" name="Bmais" type="number" required>
                   
                   <label for="Bmenos">Sangue B-</label>
-                  <input id="Bmenos" name="Bmenos" type="number" class="campo campo-medio" required>
+                  <input id="Bmenos" name="Bmenos" type="number" required>
                 </div>
               
                 <div class="sangueAB">
                   <label for="ABmais">Sangue AB+</label>
-                  <input id="ABmais" name="ABmais" type="number" class="campo campo-medio" required>
+                  <input id="ABmais" name="ABmais" type="number" required>
                 
                 
                   <label for="ABmenos">Sangue AB-</label>
-                  <input id="ABmenos" name="ABmenos" type="number" class="campo campo-medio" required>
+                  <input id="ABmenos" name="ABmenos" type="number" required>
                 </div>
               
                 <div class="sangueO">
                   <label for="Omais">Sangue O+</label>
-                  <input id="Omais" name="Omais" type="number" class="campo campo-medio" required>
+                  <input id="Omais" name="Omais" type="number" required>
                 
                   <label for="Omenos">Sangue O-</label>
-                  <input id="Omenos" name="Omenos" type="number" class="campo campo-medio" required>
+                  <input id="Omenos" name="Omenos" type="number" required>
                 </div>
               </div>
 
@@ -140,8 +143,9 @@
 
 
         <script src="../js/preencheTabelaTipoSangue.js"></script>
-        <script src="../js/manipulaBotoesMTS.js"></script>
+        <script src="../js/manipulaBotoesTS.js"></script>
         <script src="../js/selecionaLinhaNaTabela.js"></script>
+        <script src="../js/preencheInputsTS.js"></script>
         <script src="../js/filtraHospital.js"></script>
         <script src="../js/ano.js"></script>
       </body>

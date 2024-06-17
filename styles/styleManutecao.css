@@ -109,6 +109,11 @@ th {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+#idHosp, #idPlasma {
+  text-align: center;
+  width: 50px;
+}
+
 .grupo2 {
   display: flex;
   flex-wrap: wrap;

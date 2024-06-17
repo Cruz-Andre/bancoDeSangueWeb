@@ -5,6 +5,6 @@ document.getElementById('formTS').addEventListener('submit', function(event) {
     if (action === 'cadastrar') {
         this.action = '../php/insertBD/cadTipoSangue.php'; // URL para a ação de cadastro
     } else if (action === 'atualizar') {
-        this.action = '../php/insertBD/atualizaTipoSangue.php'; // URL para a ação de atualizar
+        this.action = '../php/updateBD/atualizaTipoSangue.php'; // URL para a ação de atualizar
     }
 });
