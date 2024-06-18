@@ -1,11 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     selecionaLinhaNaTabela();
 
-    document.getElementById("preencherInputs").addEventListener("click", function() {
+    document.getElementById("preencherInputs").addEventListener("click", function () {
         preencherCampos();
     });
 });
-
 
 function preencherCampos() {
     let linhaSelecionada = document.querySelector("#tabelaHospitais tr.selecionado");
@@ -23,7 +22,7 @@ function preencherCampos() {
         document.getElementById("cidadeDoador").value = cells[8].innerText;
         document.getElementById("ufdoador").value = cells[9].innerText;
         document.getElementById("emailDoador").value = cells[10].innerText;
-        
+
     } else {
         alert("Selecione uma linha na tabela!");
     }

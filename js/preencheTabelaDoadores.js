@@ -8,11 +8,11 @@ function preencheTabelaDoadores() {
         alert('Erro: ' + data.error);
         return;
       }
-      
+
       let tabela = document.getElementById('tabelaHospitais');
       tabela.innerHTML = '';
       let tamanhoTabela = Math.max(data.arrayD.length, data.arrayL.length);
-      
+
       for (let i = 0; i < tamanhoTabela; i++) {
         let cadDoador = data.arrayD[i] || {};
         let logDoador = data.arrayL[i] || {};
@@ -67,7 +67,7 @@ document.getElementById('preencherTabela').addEventListener('click', preencheTab
 
 //
 function applyConditionalStyling() {
-  document.querySelectorAll('.podeDoar').forEach(function(div) {
+  document.querySelectorAll('.podeDoar').forEach(function (div) {
     if (div.textContent === 'Sim') {
       div.style.color = 'rgb(155 6 2)';
       div.style.fontWeight = 'bold';

@@ -239,6 +239,7 @@
                 <button id="atualizarHosp" title="Atualiza os dados do doador selecionado" name="action" value="atualizar">Atualizar</button>
                 <button id="cadastrarHosp" title="Cadastra um novo doador" name="action" value="cadastrar">Cadastrar</button>
               </div>
+              
             </form>
           </section>
         </main>

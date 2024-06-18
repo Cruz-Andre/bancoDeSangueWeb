@@ -1,8 +1,9 @@
 # bancoDeSangueWeb
 
-<h3>Este projeto é uma Aplicação WEB do bancoDeSangue feito em JAVA e está em desenvolvimento para o PI-II</h3>
+<h3>Este projeto é uma Aplicação WEB do bancoDeSangue feito em JAVA e está em desenvolvimento para o PI-II.</h3>
 <h3>Módulo D - Assistente de Desenvolvimento de Aplicativos Computacionais II - PI II - SenacTech.</h3>
-<h3>O objetivo é facilitar o CRUD da aplicaçãoWeb para os funcionários cadastradores, o estoque de bolsas de sangue por tipo sanguíneo, bem como fornecer informações sobre o estoque de sangue nos hospitais na página principal.</h3>
+<h3>O objetivo é facilitar o CRUD da aplicaçãoWeb para os funcionários cadastradores.</h3>
+<h3>O projeto fornece o estoque de bolsas de sangue por tipo sanguíneo, plasma, e informações sobre os doadores.</h3>
 <h3>Previsão de conclusão e entrega: 25 de junho de 2024</h3>
 <h3>Autor: André Cruz</h3>
 
@@ -40,8 +41,8 @@
 - ~~As funcionalidades descritas acima.~~ :white_check_mark:
 
 # Como rodar o projeto
-- Execute o XAMPP e inicie Apache e MySQL
-- Na maioria dos casos não é necessário reconfigurar o arquivo conexao.php.
-- No seu SGDB de preferência abra o arquivo "bdSangueWEB comandos SQL.sql" e execute o scritpt para montar o banco.
+- Execute o XAMPP e inicie Apache e MySQL;
+- Na maioria dos casos não é necessário reconfigurar o arquivo conexao.php;
+- No seu SGDB de preferência abra o arquivo "bdSangueWEB comandos SQL.sql" e execute o scritpt para montar o banco;
 - Copie a pasta do repositório para dentro do htdocs do xampp, geralmente: c:\xampp\htdocs
 - No navegador digite: localhost\nome_da_pasta_do_repositorio
