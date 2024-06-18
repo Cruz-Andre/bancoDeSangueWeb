@@ -18,12 +18,11 @@ function preencherCampos() {
         document.getElementById("tipoSanguineoDoador").value = cells[2].innerText;
         document.getElementById("dataNascimentoDoador").value = formataData(cells[3].innerText);
         document.getElementById("dataUltimaDoacao").value = formataData(cells[4].innerText);
-        document.getElementById("cepDoador").value = cells[5].innerText;
-        document.getElementById("bairroDoador").value = cells[6].innerText;
-        document.getElementById("cidadeDoador").value = cells[7].innerText;
-        document.getElementById("ufdoador").value = cells[8].innerText;
-        document.getElementById("emailDoador").value = cells[9].innerText;
-        document.getElementById("senhaLogin").value = cells[10].innerText;
+        document.getElementById("cepDoador").value = cells[6].innerText;
+        document.getElementById("bairroDoador").value = cells[7].innerText;
+        document.getElementById("cidadeDoador").value = cells[8].innerText;
+        document.getElementById("ufdoador").value = cells[9].innerText;
+        document.getElementById("emailDoador").value = cells[10].innerText;
         
     } else {
         alert("Selecione uma linha na tabela!");

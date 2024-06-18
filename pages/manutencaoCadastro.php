@@ -47,7 +47,7 @@
               <table>
                 <thead class="cabecalhoFixo">
                   <tr>
-                    <th colspan="10">Tabela Doadores</th>
+                    <th colspan="11">Tabela Doadores</th>
                   </tr>
                   <tr>
                     <th rowspan="1">#</th>
@@ -55,6 +55,7 @@
                     <th colspan="1">Tipo Sanguineo</th>
                     <th colspan="1">Data de Nascimento</th>
                     <th colspan="1">Última Doação</th>
+                    <th colspan="1">Já pode Doar?</th>
                     <th colspan="1">CEP</th>
                     <th colspan="1">Bairro</th>
                     <th colspan="1">Cidade</th>

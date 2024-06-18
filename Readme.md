@@ -6,7 +6,7 @@
 <h3>Previsão de conclusão e entrega: 25 de junho de 2024</h3>
 <h3>Autor: André Cruz</h3>
 
-![](https://progress-bar.dev/97/?title=Overal%20Progress)
+![](https://progress-bar.dev/100/?title=Overal%20Progress)
 <br>
 
 <br>
@@ -20,7 +20,7 @@
 - Página de Manutenção Tipo Sanguíneo ![](https://progress-bar.dev/100/)
 - Página de Manutenção de Plasma ![](https://progress-bar.dev/100/)
 - Página de Manutenção de usuários/doadores ![](https://progress-bar.dev/100/)
-- Back-End CRUD ![](https://progress-bar.dev/80/)
+- Back-End CRUD ![](https://progress-bar.dev/100/)
 - ~~Agendamento de doação de sangue~~
 
 <h3>O projeto está em desenvolvimento utilizando as seguintes tecnologias:</h3>
@@ -37,11 +37,11 @@
 # TO-DO
 - ~~Novo logotipo;~~ :white_check_mark:
 - ~~Novo design e substituir o bootstrap/tailwind por CSS vanila~~ :white_check_mark:
-- As funcionalidades descritas acima.
+- ~~As funcionalidades descritas acima.~~ :white_check_mark:
 
 # Como rodar o projeto
 - Execute o XAMPP e inicie Apache e MySQL
-- Na maioria dos casos não é necessário configurar o arquivo conexao.php.
-- No seu SGDB de preferência abra o arquivo "bdSangueWEB comandos SQL.sql" para montar o banco.
+- Na maioria dos casos não é necessário reconfigurar o arquivo conexao.php.
+- No seu SGDB de preferência abra o arquivo "bdSangueWEB comandos SQL.sql" e execute o scritpt para montar o banco.
 - Copie a pasta do repositório para dentro do htdocs do xampp, geralmente: c:\xampp\htdocs
 - No navegador digite: localhost\nome_da_pasta_do_repositorio
