@@ -45,4 +45,18 @@
 - Na maioria dos casos não é necessário reconfigurar o arquivo conexao.php;
 - No seu SGDB de preferência abra o arquivo "bdSangueWEB comandos SQL.sql" e execute o scritpt para montar o banco;
 - Copie a pasta do repositório para dentro do htdocs do xampp, geralmente: c:\xampp\htdocs
-- No navegador digite: localhost\nome_da_pasta_do_repositorio
+- Necessário mudar o endereço do fetch nos arquivos:
+- - preencheTabelaDoadores.js
+- - preencheTabelaPlasma.js
+- - preencheTabelaTipoSangue.js
+
+    #### Exemplo: apague apenas o "inf4n221/":
+    ```
+    function preencheTabelaDoadores() {
+        de:
+        fetch('http://localhost/inf4n221/bancoDeSangueWeb/php/selectBD/buscaDoadores.php')
+        
+        para:
+        fetch('http://localhost/bancoDeSangueWeb/php/selectBD/buscaDoadores.php')
+    
+- No navegador digite: localhost\bancoDeSangueWeb
